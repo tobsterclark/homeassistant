@@ -1,0 +1,76 @@
+# Chip config
+esphome:
+  name: bedroom_toby_light_3
+
+# Available platforms:
+# esp32, esp8266, rp2040, host, bk72xx, rtl87xx, libretiny
+bk72xx:
+  board: cb2l
+  framework:
+    version: latest
+
+# Enable logging
+logger:
+  level: verbose
+
+# Let homeassistant access and enable flashing ota
+api:
+
+# Backup in case esp is misconfigured so still can be flashed ota
+web_server:
+captive_portal:
+
+# Wifi configuration
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_pswd
+
+# Access point in case device can't connect to configured internet
+  ap:
+
+# This is where your device config goes
+# Things such as sensors, switches and relays get configured here
+
+text_sensor:
+  - platform: libretiny
+    version:
+      name: LibreTiny Version
+# Send IP Address to HA
+  - platform: wifi_info
+    ip_address:
+      name: $friendly_name IP Address
+
+output:
+  - platform: libretiny_pwm
+    id: output_red
+    pin: P26
+  - platform: libretiny_pwm
+    id: output_green
+    pin: P24
+  - platform: libretiny_pwm
+    id: output_blue
+    pin: P6
+  - platform: libretiny_pwm
+    id: output_cold
+    pin: P8
+  - platform: libretiny_pwm
+    id: output_warm
+    pin: P7
+
+light:
+  - platform: rgbww
+    id: light_rgbww
+    name: Light
+    color_interlock: false
+    cold_white_color_temperature: 6500 K
+    warm_white_color_temperature: 2700 K
+    red: output_red
+    green: output_green
+    blue: output_blue
+    cold_white: output_cold
+    warm_white: output_warm
+
+# Send WiFi signal strength & uptime to HA
+sensor:
+  - platform: uptime
+    name: $friendly_name "Uptime"

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.660926f4e0f07b7e362cee6e4de83ad2",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "pool-heater",
+      "friendly_name": "",
+      "mac_address": "E8:DB:84:AA:FC:1C",
+      "compilation_time": "Oct 15 2023, 11:42:28",
+      "model": "esp01_1m",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2023.9.0-dev",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "voice_assistant_version": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 9
+    },
+    "sensor": [
+      {
+        "object_id": "pool_heater_control_uptime",
+        "key": 2808026622,
+        "name": "Pool Heater Control \"Uptime\"",
+        "unique_id": "e8db84aafc1c-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timer-outline",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [
+      {
+        "object_id": "pool_heater_control_ip_address",
+        "key": 1839509680,
+        "name": "Pool Heater Control IP Address",
+        "unique_id": "e8db84aafc1c-wifiinfo-ip",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "pool_heater_relay",
+        "key": 1848547299,
+        "name": "Pool Heater Relay",
+        "unique_id": "pool-heaterswitchpool_heater_relay",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ]
+  }
+}

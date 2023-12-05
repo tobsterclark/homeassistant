@@ -1,0 +1,1092 @@
+{
+  "version": 1,
+  "minor_version": 4,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "debddd68cd871c0eafeb67b6b610764f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "edfa9344522620789a280ba08c83722c",
+        "identifiers": [
+          [
+            "hassio",
+            "core"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Core",
+        "name_by_user": null,
+        "name": "Home Assistant Core",
+        "serial_number": null,
+        "sw_version": "2023.11.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "debddd68cd871c0eafeb67b6b610764f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "8ff3768a319ea70a9bf4750c4b2ee2eb",
+        "identifiers": [
+          [
+            "hassio",
+            "supervisor"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Supervisor",
+        "name_by_user": null,
+        "name": "Home Assistant Supervisor",
+        "serial_number": null,
+        "sw_version": "2023.11.6",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "debddd68cd871c0eafeb67b6b610764f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "3212217533aa15762f78bb917c86c237",
+        "identifiers": [
+          [
+            "hassio",
+            "host"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Host",
+        "name_by_user": null,
+        "name": "Home Assistant Host",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d7d20b12af765da74707f75bd8d95ac7"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "c62acd8b68f3a174f937310e55a8c40f",
+        "identifiers": [
+          [
+            "sun",
+            "d7d20b12af765da74707f75bd8d95ac7"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Sun",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fa4fdf55ceb3c477e18c03c6e5ccae3d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "98c6094fade2dae569af27405b0f74ab",
+        "identifiers": [
+          [
+            "cast",
+            "bfdbefa06370e5009bbca181abfc457e"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Google Home Mini",
+        "name_by_user": null,
+        "name": "Master bedroom Speaker",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fa4fdf55ceb3c477e18c03c6e5ccae3d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a1143e5ef6e94e9adaa11df581220e97",
+        "identifiers": [
+          [
+            "cast",
+            "9ce3ceb5a308fd646affca959d0222a1"
+          ]
+        ],
+        "manufacturer": "Sony",
+        "model": "BRAVIA 4K GB",
+        "name_by_user": null,
+        "name": "TV",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fa4fdf55ceb3c477e18c03c6e5ccae3d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b93cdaaffdde63260161ac8a79bdd6fa",
+        "identifiers": [
+          [
+            "cast",
+            "4c65d50670afcf0d33f80bd877bed557"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Google Home Mini",
+        "name_by_user": null,
+        "name": "Kitchen Speaker",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fa4fdf55ceb3c477e18c03c6e5ccae3d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ad6265386f9d50994d5f3df9da312559",
+        "identifiers": [
+          [
+            "cast",
+            "1b600df7ad384172a44f6928310f27a9"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Google Cast Group",
+        "name_by_user": null,
+        "name": "Living room",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fa4fdf55ceb3c477e18c03c6e5ccae3d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4b105611c437d2d02e5233e1b8c582af",
+        "identifiers": [
+          [
+            "cast",
+            "dd52658cf9c9462fa8e8e6aeb544d43d"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Google Cast Group",
+        "name_by_user": null,
+        "name": "Entire house",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fa4fdf55ceb3c477e18c03c6e5ccae3d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c1ed950b1a71ed823ff12520abf181ce",
+        "identifiers": [
+          [
+            "cast",
+            "c88ba1d89fc23300c42f93aadb4c59d7"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Google Home",
+        "name_by_user": null,
+        "name": "Sasha’s bedroom google",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fa4fdf55ceb3c477e18c03c6e5ccae3d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f96a0d9482e1f5442aec21494ff40beb",
+        "identifiers": [
+          [
+            "cast",
+            "9fb0f46ca4747655c66b333ba3dffebe"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Google Nest Mini",
+        "name_by_user": null,
+        "name": "Study Speaker",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "debddd68cd871c0eafeb67b6b610764f"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/5c53de3b_esphome-dev",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "e22564ed1ad43d0430816341c933c9e7",
+        "identifiers": [
+          [
+            "hassio",
+            "5c53de3b_esphome-dev"
+          ]
+        ],
+        "manufacturer": "ESPHome",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "ESPHome (dev)",
+        "serial_number": null,
+        "sw_version": "dev",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom_toby",
+        "config_entries": [
+          "3e25dd2c73d1d7f66509174e0a48fa7b"
+        ],
+        "configuration_url": "http://192.168.0.125:80",
+        "connections": [
+          [
+            "mac",
+            "38:1f:8d:3f:61:60"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7d5dab88ca1832d696680a7a86e20d9c",
+        "identifiers": [],
+        "manufacturer": "espressif",
+        "model": "cb2l",
+        "name_by_user": null,
+        "name": "Bedroom Toby Light 1",
+        "serial_number": null,
+        "sw_version": "2023.9.0-dev (Sep 27 2023, 21:18:00)",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom_toby",
+        "config_entries": [
+          "fe68dbd7a47cea5f61fea39c08143672"
+        ],
+        "configuration_url": "http://192.168.0.105:80",
+        "connections": [
+          [
+            "mac",
+            "38:1f:8d:3f:68:4c"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "82a8cdc32c0603107a5d9c3561981c16",
+        "identifiers": [],
+        "manufacturer": "espressif",
+        "model": "cb2l",
+        "name_by_user": null,
+        "name": "Bedroom Toby Light 2",
+        "serial_number": null,
+        "sw_version": "2023.9.0-dev (Sep 27 2023, 21:49:28)",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom_toby",
+        "config_entries": [
+          "c1c66a4bd695cfe680145c484925b8a7"
+        ],
+        "configuration_url": "http://192.168.0.191:80",
+        "connections": [
+          [
+            "mac",
+            "38:1f:8d:3e:df:f2"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "61814da4765e7b3afab82d548cac1b41",
+        "identifiers": [],
+        "manufacturer": "espressif",
+        "model": "cb2l",
+        "name_by_user": null,
+        "name": "Bedroom Toby Light 3",
+        "serial_number": null,
+        "sw_version": "2023.9.0-dev (Sep 28 2023, 23:47:47)",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom_toby",
+        "config_entries": [
+          "9a71613b8bd80cdaf8661f3e9bb7531a"
+        ],
+        "configuration_url": "http://192.168.0.92:80",
+        "connections": [
+          [
+            "mac",
+            "e8:db:84:ab:f9:30"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b53e98f956301efbf19835ca97880e2a",
+        "identifiers": [],
+        "manufacturer": "Espressif",
+        "model": "esp01_1m",
+        "name_by_user": null,
+        "name": "Bedroom Toby Lightswitch 1",
+        "serial_number": null,
+        "sw_version": "2023.9.0-dev (Sep 30 2023, 18:10:46)",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d1eb16bc2004b59d92330d6b8ac2d65b"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4a2d2f1d97201aaa50304004bb48dee7",
+        "identifiers": [
+          [
+            "mobile_app",
+            "FA4BC243-240B-4BC5-900E-26FD69C71D73"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone12,1",
+        "name_by_user": null,
+        "name": "Toby’s iPhone",
+        "serial_number": null,
+        "sw_version": "17.1.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "510ef7df4f9b0c8c338174f5489159a4"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f5d521c750dbb8fb54fcab64eb71aa37",
+        "identifiers": [
+          [
+            "mobile_app",
+            "6BE41257-C572-4757-AAFC-46651DF2DD8C"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone12,3",
+        "name_by_user": null,
+        "name": "Andrew's iPhone",
+        "serial_number": null,
+        "sw_version": "16.1.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "17e982b60f74fed0f00c5bd8bbedff52"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1e48d3f17d3139917d1a73548c86bee9",
+        "identifiers": [
+          [
+            "mobile_app",
+            "051D7F41-60FB-4F36-8A4B-98B25EC6A1F2"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone13,3",
+        "name_by_user": null,
+        "name": "Kathryn’s iPhone",
+        "serial_number": null,
+        "sw_version": "17.1.2",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "cf382686a78f26696a927dc08bb41651"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e0236acfdf8da3e431a1646d7e2da6f0",
+        "identifiers": [
+          [
+            "mobile_app",
+            "B3A9FF3B-254F-45A7-844E-38712F65167B"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone14,6",
+        "name_by_user": null,
+        "name": "Lucy’s iPhone",
+        "serial_number": null,
+        "sw_version": "16.0.2",
+        "via_device_id": null
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "de0e2e2ef118ff82bda07041e366de84"
+        ],
+        "configuration_url": "http://192.168.0.60:80",
+        "connections": [
+          [
+            "mac",
+            "8c:aa:b5:15:ec:4b"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "cf1b944ad1f14103ba3cc30dca84c1ad",
+        "identifiers": [],
+        "manufacturer": "Espressif",
+        "model": "nodemcuv2",
+        "name_by_user": null,
+        "name": "Garage-Door-Test",
+        "serial_number": null,
+        "sw_version": "2023.9.0-dev (Oct 28 2023, 18:01:42)",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "9f92b9d3c535c612f2fb271caef510a8"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4af34df7caca4080c1e89afeeb756011",
+        "identifiers": [
+          [
+            "mobile_app",
+            "DF225C25-6C52-40D0-85EF-D494AD36DB66"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone15,4",
+        "name_by_user": null,
+        "name": "Andrew iPhone",
+        "serial_number": null,
+        "sw_version": "17.1.2",
+        "via_device_id": null
+      },
+      {
+        "area_id": "pool",
+        "config_entries": [
+          "660926f4e0f07b7e362cee6e4de83ad2"
+        ],
+        "configuration_url": "http://192.168.0.245:80",
+        "connections": [
+          [
+            "mac",
+            "e8:db:84:aa:fc:1c"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "30d96695b6d582023c125ae54d945348",
+        "identifiers": [],
+        "manufacturer": "Espressif",
+        "model": "esp01_1m",
+        "name_by_user": null,
+        "name": "Pool-Heater",
+        "serial_number": null,
+        "sw_version": "2023.9.0-dev (Oct 15 2023, 11:42:28)",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "f970dda455f26527f56d908ff6bd1ef9"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "30a6112389bc5daf9eeff16abb2d945c",
+        "identifiers": [
+          [
+            "mobile_app",
+            "f9bf746ad7f07ae7"
+          ]
+        ],
+        "manufacturer": "VolvoCars",
+        "model": "Volvo",
+        "name_by_user": null,
+        "name": "Volvo",
+        "serial_number": null,
+        "sw_version": "30",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "f3da31603dae1f946b235274fbc0fc4f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "aa4054a6298f07ab57f1853eb9c9b327",
+        "identifiers": [
+          [
+            "mobile_app",
+            "8510cf08add927a6"
+          ]
+        ],
+        "manufacturer": "VolvoCars",
+        "model": "Volvo",
+        "name_by_user": null,
+        "name": "Volvo",
+        "serial_number": null,
+        "sw_version": "30",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "5f6f3badcbf808ced90dc8d73109a9db"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "54b5d0631543179c4e971120a3a86844",
+        "identifiers": [
+          [
+            "met",
+            "5f6f3badcbf808ced90dc8d73109a9db"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "dc0d52347c6460f5f64d175f02fba7b2"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "7f18a97991f1c44a9cd6ddcd6a962aa3",
+        "identifiers": [
+          [
+            "hacs",
+            "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+          ]
+        ],
+        "manufacturer": "hacs.xyz",
+        "model": "",
+        "name_by_user": null,
+        "name": "HACS",
+        "serial_number": null,
+        "sw_version": "1.33.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "dc0d52347c6460f5f64d175f02fba7b2"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "7b536f32c1ce76be100f342c6eeb5154",
+        "identifiers": [
+          [
+            "hacs",
+            "194140521"
+          ]
+        ],
+        "manufacturer": "",
+        "model": "integration",
+        "name_by_user": null,
+        "name": "browser_mod",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "dc0d52347c6460f5f64d175f02fba7b2"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "e5721e1c40e3a6808861284aad9c66ea",
+        "identifiers": [
+          [
+            "hacs",
+            "413798425"
+          ]
+        ],
+        "manufacturer": "stokkie90",
+        "model": "integration",
+        "name_by_user": null,
+        "name": "UI Lovelace Minimalist",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "72f1893059f4aee4398935e3fca72bf0"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e5fc668115738b34105d7648759ba078",
+        "identifiers": [
+          [
+            "browser_mod",
+            "4f36b40e-ea9c2189"
+          ]
+        ],
+        "manufacturer": "Browser Mod",
+        "model": null,
+        "name_by_user": null,
+        "name": "4f36b40e-ea9c2189",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "dc0d52347c6460f5f64d175f02fba7b2"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "3953e220679fe52595afada7390d63d6",
+        "identifiers": [
+          [
+            "hacs",
+            "156434866"
+          ]
+        ],
+        "manufacturer": "",
+        "model": "plugin",
+        "name_by_user": null,
+        "name": "layout-card",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "72f1893059f4aee4398935e3fca72bf0"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "89d89308e714beb1930df55453883475",
+        "identifiers": [
+          [
+            "browser_mod",
+            "f34cfb87-726941c2"
+          ]
+        ],
+        "manufacturer": "Browser Mod",
+        "model": null,
+        "name_by_user": null,
+        "name": "f34cfb87-726941c2",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "72f1893059f4aee4398935e3fca72bf0"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9d7652976591fe8871bd5ec0b9f7b00a",
+        "identifiers": [
+          [
+            "browser_mod",
+            "c51281c8-55d2fe23"
+          ]
+        ],
+        "manufacturer": "Browser Mod",
+        "model": null,
+        "name_by_user": null,
+        "name": "c51281c8-55d2fe23",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "72f1893059f4aee4398935e3fca72bf0"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "cc5d3fd13ac2098fbe97c6a31b7eb688",
+        "identifiers": [
+          [
+            "browser_mod",
+            "551c18b5-c0e5e2ae"
+          ]
+        ],
+        "manufacturer": "Browser Mod",
+        "model": null,
+        "name_by_user": null,
+        "name": "551c18b5-c0e5e2ae",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "72f1893059f4aee4398935e3fca72bf0"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "16d50e8b5dce777a6c16b8b23cb00ba0",
+        "identifiers": [
+          [
+            "browser_mod",
+            "ab85e259-ac7b12e6"
+          ]
+        ],
+        "manufacturer": "Browser Mod",
+        "model": null,
+        "name_by_user": null,
+        "name": "ab85e259-ac7b12e6",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "72f1893059f4aee4398935e3fca72bf0"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f4d2cd922c3bffa2dd75fbd27b32023e",
+        "identifiers": [
+          [
+            "browser_mod",
+            "7744b9ee-d96619d5"
+          ]
+        ],
+        "manufacturer": "Browser Mod",
+        "model": null,
+        "name_by_user": null,
+        "name": "7744b9ee-d96619d5",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "72f1893059f4aee4398935e3fca72bf0"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0580c749c016d39caf2fdc84799f08e5",
+        "identifiers": [
+          [
+            "browser_mod",
+            "387f9981-b507e5c7"
+          ]
+        ],
+        "manufacturer": "Browser Mod",
+        "model": null,
+        "name_by_user": null,
+        "name": "387f9981-b507e5c7",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "dc0d52347c6460f5f64d175f02fba7b2"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "ef2aaf0e2fa5ce7c77c719e2f1702e9f",
+        "identifiers": [
+          [
+            "hacs",
+            "419786466"
+          ]
+        ],
+        "manufacturer": "WillCodeForCats",
+        "model": "integration",
+        "name_by_user": null,
+        "name": "SolarEdge Modbus Multi",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "4f33fa4cb74a91bcf30ad094b5685464"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "",
+        "id": "d75f5bab58b98de0c088c9b3585e4a80",
+        "identifiers": [
+          [
+            "solaredge_modbus_multi",
+            "SE8.25K-AUBTEBEU4_7E0D1529"
+          ]
+        ],
+        "manufacturer": "SolarEdge",
+        "model": "SE8.25K-AUBTEBEU4",
+        "name_by_user": null,
+        "name": "Solaredge I1",
+        "serial_number": null,
+        "sw_version": "0004.0013.0040",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "4f33fa4cb74a91bcf30ad094b5685464"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "Export+Import",
+        "id": "01d00f04c8ea934ec9eae113bf51a71a",
+        "identifiers": [
+          [
+            "solaredge_modbus_multi",
+            "SE8.25K-AUBTEBEU4_7E0D1529_M1"
+          ]
+        ],
+        "manufacturer": "SolarEdge",
+        "model": "SE-MTR-3Y-400V-A",
+        "name_by_user": null,
+        "name": "Solaredge M1",
+        "serial_number": null,
+        "sw_version": "74",
+        "via_device_id": "d75f5bab58b98de0c088c9b3585e4a80"
+      }
+    ],
+    "deleted_devices": [
+      {
+        "config_entries": [
+          "debddd68cd871c0eafeb67b6b610764f"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "5c53de3b_esphome"
+          ]
+        ],
+        "id": "13caa736d35a4c94d651a47d6b80490e",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "debddd68cd871c0eafeb67b6b610764f"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_ssh"
+          ]
+        ],
+        "id": "03b1f1d9441022dbfca30ee63cbc8035",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "5f6f3badcbf808ced90dc8d73109a9db"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "id": "c6ce3a083296c25203ba49fb7df812c5",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "72f1893059f4aee4398935e3fca72bf0"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "browser_mod",
+            "CAST"
+          ]
+        ],
+        "id": "fe253a6b7cd0b1b737c63de5dd79820f",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "solaredge_modbus",
+            "solaredge"
+          ]
+        ],
+        "id": "f35fa12fea7fa372018267e620a685dc",
+        "orphaned_timestamp": 1701775797.5186298
+      },
+      {
+        "config_entries": [
+          "dc0d52347c6460f5f64d175f02fba7b2"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hacs",
+            "236146080"
+          ]
+        ],
+        "id": "98b9604bc2ca45504350e3da1f14a573",
+        "orphaned_timestamp": null
+      }
+    ]
+  }
+}

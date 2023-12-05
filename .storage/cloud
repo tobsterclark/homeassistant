@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "cloud",
+  "data": {
+    "alexa_default_expose": [
+      "climate",
+      "cover",
+      "fan",
+      "humidifier",
+      "light",
+      "lock",
+      "scene",
+      "script",
+      "sensor",
+      "switch",
+      "vacuum",
+      "water_heater"
+    ],
+    "alexa_entity_configs": {},
+    "alexa_settings_version": 3,
+    "cloud_user": "b6492c637f774c3cb9b9f3e5c347d4a0",
+    "cloudhooks": {},
+    "alexa_enabled": true,
+    "google_enabled": true,
+    "remote_enabled": false,
+    "google_default_expose": [
+      "climate",
+      "cover",
+      "fan",
+      "humidifier",
+      "light",
+      "lock",
+      "scene",
+      "script",
+      "sensor",
+      "switch",
+      "vacuum",
+      "water_heater"
+    ],
+    "google_entity_configs": {},
+    "google_settings_version": 3,
+    "google_local_webhook_id": "cfaabf07b95ba29f92edd6f985abe32ebc2bfeb0c208e30171ac707a317ac4ed",
+    "google_secure_devices_pin": null,
+    "remote_domain": "mwmcbdelk5ixgn018z7gtspan5epnz2q.ui.nabu.casa",
+    "username": "a7f5aedd-1028-4a0b-be58-7130e3b236a9"
+  }
+}

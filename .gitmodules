@@ -1,0 +1,3 @@
+[submodule "packages/energy"]
+	path = packages/energy
+	url = https://github.com/ryanm101/hasolarcfg

@@ -1,0 +1,14 @@
+# Logs
+*.log*
+
+# Databases
+*.db*
+
+# HA Version
+*.HA_VERSION
+
+# Secrets
+secrets.yaml
+
+# .cloud
+.cloud/**/*

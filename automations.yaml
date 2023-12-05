@@ -1,0 +1,19 @@
+- id: '1695912907008'
+  alias: toby_bedroom_lights
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.toby_bedroom_lightswitch
+    from:
+    to:
+  condition: []
+  action:
+  - service: light.toggle
+    data:
+      transition: 0.1
+      brightness_pct: 100
+      kelvin: 3000
+    target:
+      entity_id: light.bedroom_toby_light
+  mode: single

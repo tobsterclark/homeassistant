@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "name": "bedroom-toby",
+        "id": "bedroom_toby",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "bedroom-sasha",
+        "id": "bedroom_sasha",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "bedroom-lucy",
+        "id": "bedroom_lucy",
+        "picture": null
+      },
+      {
+        "aliases": [
+          "study-andrew"
+        ],
+        "name": "library",
+        "id": "library",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "bedroom-parents",
+        "id": "bedroom_parents",
+        "picture": null
+      },
+      {
+        "aliases": [
+          "study-toby"
+        ],
+        "name": "bedroom-spare",
+        "id": "bedroom_spare",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "kitchen",
+        "id": "kitchen",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "living-room",
+        "id": "living_room",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "garage",
+        "id": "garage",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "pool",
+        "id": "pool",
+        "picture": null
+      }
+    ]
+  }
+}

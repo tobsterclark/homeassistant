@@ -1,0 +1,109 @@
+# Friendly name for esp
+substitutions:
+  friendly_name: Garage Door
+
+# Chip config
+esphome:
+  name: garage-door-test
+
+# Available platforms:
+# esp32, esp8266, rp2040, host, bk72xx, rtl87xx, libretiny
+esp8266:
+  board: nodemcuv2
+
+# Enable logging
+logger:
+  level: DEBUG
+
+# Let homeassistant access and enable flashing ota
+api:
+ota:
+
+# Backup in case esp is misconfigured so still can be flashed ota
+web_server:
+captive_portal:
+
+# Wifi configuration
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_pswd
+  # manual_ip: 
+
+# Access point in case device can't connect to configured internet
+  ap:
+
+# Define the two magnet sensors as sensor components for esphome
+# Also provide a binary sensor for whether the garage door is currently being moved
+# Data sourced from ADC sensor
+binary_sensor:
+  - platform: gpio
+    id: reed_sensor_closed
+    name: "Check if closed"
+    pin:
+      number: D1
+      mode: INPUT_PULLUP
+      # Don't invert because its in normally close mode
+  - platform: gpio
+    id: reed_sensor_open
+    name: "Check if open"
+    pin:
+      number: D6
+      mode: INPUT_PULLUP
+      # Invert because its in normally open mode
+      inverted: true
+  - platform: analog_threshold
+    id: door_moving
+    name: "Check if moving"
+    sensor_id: controller_motion
+    threshold: 4.95
+    filters: 
+      - invert:
+          
+
+# Defining the two relays as outputs
+# Internal only, used to create the button components
+output:
+  - platform: gpio
+    id: close_door_output
+    pin: D4
+  - platform: gpio
+    id: open_door_output
+    pin: D3
+
+# Button components for opening and closing the garage door
+# Set as buttons to avoid confusion with them reporting as switches in esphome
+button:
+  - platform: output
+    name: "Close garage door"
+    id: close_door
+    output: close_door_output
+    duration: 500ms
+  - platform: output
+    name: "Open garage door"
+    id: open_door
+    output: open_door_output
+    duration: 500ms
+
+# Generic sensor component for sensing the motor load
+# This can tell us if the garage door is in motion or not
+# Also the uptime sensor is a generic sensor
+sensor:
+  - platform: adc
+    pin: A0
+    id: controller_motion
+    update_interval: 250ms
+    internal: true
+    filters: 
+      - multiply: 5
+      - sliding_window_moving_average: 
+          window_size: 8
+          send_every: 8
+  - platform: uptime
+    name: $friendly_name "Uptime"
+
+# Send IP Address to HA
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: $friendly_name IP Address
+

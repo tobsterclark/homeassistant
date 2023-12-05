@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.fe68dbd7a47cea5f61fea39c08143672",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "bedroom_toby_light_2",
+      "friendly_name": "",
+      "mac_address": "38:1F:8D:3F:68:4C",
+      "compilation_time": "Sep 27 2023, 21:49:28",
+      "model": "cb2l",
+      "manufacturer": "",
+      "has_deep_sleep": false,
+      "esphome_version": "2023.9.0-dev",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "voice_assistant_version": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 9
+    },
+    "light": [
+      {
+        "object_id": "light",
+        "key": 1935470627,
+        "name": "Light",
+        "unique_id": "bedroom_toby_light_2lightlight",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          19,
+          35
+        ],
+        "min_mireds": 153.8462,
+        "max_mireds": 370.3704,
+        "effects": [],
+        "legacy_supports_brightness": true,
+        "legacy_supports_rgb": true,
+        "legacy_supports_white_value": true,
+        "legacy_supports_color_temperature": true
+      }
+    ],
+    "sensor": [],
+    "text_sensor": [
+      {
+        "object_id": "libretiny_version",
+        "key": 3145151502,
+        "name": "LibreTiny Version",
+        "unique_id": "bedroom_toby_light_2text_sensorlibretiny_version",
+        "disabled_by_default": false,
+        "icon": "mdi:cellphone-arrow-down",
+        "entity_category": 2
+      }
+    ]
+  }
+}

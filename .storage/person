@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "toby",
+        "name": "Toby",
+        "user_id": "fb227f0a11954917a5607de1672f1165",
+        "device_trackers": [
+          "device_tracker.tobys_iphone"
+        ]
+      },
+      {
+        "id": "andrew",
+        "name": "Andrew",
+        "device_trackers": [
+          "device_tracker.andrew_s_iphone",
+          "device_tracker.andrew_iphone",
+          "device_tracker.volvo_2"
+        ],
+        "user_id": "0a38ef21217e41e79c2eb7ab30a8ea3f",
+        "picture": null
+      },
+      {
+        "id": "kathryn",
+        "name": "Kathryn",
+        "device_trackers": [
+          "device_tracker.kathryns_iphone",
+          "device_tracker.volvo"
+        ],
+        "user_id": "bffbc22b187f4cf88cc677217451b98e",
+        "picture": null
+      },
+      {
+        "id": "lucy",
+        "name": "Lucy",
+        "device_trackers": [
+          "device_tracker.lucys_iphone"
+        ],
+        "user_id": "e90e961e9dfb408da9c63fedf900d9b8",
+        "picture": null
+      }
+    ]
+  }
+}

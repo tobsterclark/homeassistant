@@ -1,0 +1,53 @@
+# Friendly name for esp
+substitutions:
+  friendly_name: Toby's lightswitch
+
+# Chip config
+esphome:
+  name: bedroom_toby_lightswitch_1
+
+# Available platforms:
+# esp32, esp8266, rp2040, host, bk72xx, rtl87xx, libretiny
+esp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+  level: verbose
+
+# Let homeassistant access and enable flashing ota
+api:
+ota:
+
+# Backup in case esp is misconfigured so still can be flashed ota
+web_server:
+captive_portal:
+
+# Wifi configuration
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_pswd
+
+# Access point in case device can't connect to configured internet
+  ap:
+
+# This is where your device config goes
+# Things such as sensors, switches and relays get configured here
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO5
+    name: "Toby Bedroom Lightswitch"
+    id: switchid
+
+# Send IP Address to HA
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: $friendly_name IP Address
+
+# Send WiFi signal strength & uptime to HA
+sensor:
+  - platform: uptime
+    name: $friendly_name "Uptime"

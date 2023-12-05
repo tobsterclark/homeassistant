@@ -1,0 +1,81 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+homeassistant:
+  packages: !include_dir_named packages
+  customize:
+    sensor.solar_imported_power_kwh:
+      device_class: energy
+    sensor.solar_exported_power_kwh:
+      device_class: energy
+    sensor.solar_panel_production_kwh:
+      device_class: energy
+    sensor.solar_panel_to_house_kwh:
+      device_class: energy
+    sensor.solar_panel_to_battery_kwh:
+      device_class: energy
+    sensor.solar_grid_to_battery_kwh:
+      device_class: energy
+    sensor.solar_battery_out_kwh:
+      device_class: energy
+    sensor.solar_battery_in_kwh:
+      device_class: energy
+    sensor.solar_house_consumption_kwh:
+      device_class: energy
+    sensor.solar_battery_to_grid_kwh:
+      device_class: energy
+
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.23.0.2
+    - 192.168.0.1
+
+cover:
+  - platform: template
+    covers:
+      garage_door:
+        device_class: garage
+        friendly_name: "Garage Door"
+        position_template: >-
+          {% if is_state("binary_sensor.check_if_open", "on") -%}
+            open
+          {%- elif is_state("binary_sensor.check_if_closed", "on") -%}
+            closed
+          {%- endif %}
+        open_cover:
+          - condition: state
+            entity_id: binary_sensor.check_if_moving
+            state: "off"
+          - service: button.press
+            entity_id: button.open_garage_door
+        close_cover:
+          - condition: state
+            entity_id: binary_sensor.check_if_moving
+            state: "off"
+          - service: button.press
+            target:
+              entity_id: button.close_garage_door
+        stop_cover:
+          - condition: state
+            entity_id: binary_sensor.check_if_moving
+            state: "on"
+          - service: button.press
+            target:
+              entity_id: button.close_garage_door
+        icon_template: >-
+          {% if states('sensor.garage_door')|float > 0 %}
+            mdi:garage-open
+          {% else %}
+            mdi:garage
+          {% endif %}
