@@ -1,0 +1,9 @@
+homeassistant:
+  customize:
+    input_select.pool_control_override:
+      templates:
+        icon: >
+          if (state === "On") return 'mdi:thermometer-alert';
+          if (state === "Off") return 'mdi:thermometer-off';
+
+          return 'mdi:thermometer-auto';

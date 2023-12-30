@@ -1,0 +1,8 @@
+input_select:
+  pool_control_override:
+    name: Pool Override
+    options:
+      - "On"
+      - "Off"
+      - "Auto"
+    initial: "Auto"

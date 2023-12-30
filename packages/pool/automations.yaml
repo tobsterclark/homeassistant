@@ -1,0 +1,107 @@
+automation pool:
+  # This is the logic for the input_select defined in helpers.yaml
+  # It can control whether or not the pool heater automation is running or not
+  # It also enables the pool heater to be manually forced on or off 
+  - alias: Pool heater override
+    id: pool_heater_override
+    description: "Automation to enable overriding the pool heater control automation"
+    trigger:
+      - platform: state
+        entity_id:
+          - input_select.pool_control_override
+        from: null
+        to: null
+    condition: []
+    action:
+      - choose:
+          - conditions:
+              - condition: state
+                entity_id: input_select.pool_control_override
+                state: "On"
+            sequence:
+              - service: automation.turn_off
+                target:
+                  entity_id: automation.pool_heater_controller
+                data:
+                  stop_actions: true
+              - service: switch.turn_on
+                target:
+                  entity_id: switch.pool_heater_relay
+                data: {}
+          - conditions:
+              - condition: state
+                entity_id: input_select.pool_control_override
+                state: "Off"
+            sequence:
+              - service: automation.turn_off
+                target:
+                  entity_id: automation.pool_heater_controller
+                data:
+                  stop_actions: true
+              - service: switch.turn_off
+                target:
+                  entity_id: switch.pool_heater_relay
+                data: {}
+          - conditions:
+              - condition: state
+                entity_id: input_select.pool_control_override
+                state: Auto
+            sequence:
+              - service: automation.turn_on
+                target:
+                  entity_id: automation.pool_heater_controller
+                data: {}
+              - service: automation.trigger
+                target:
+                  entity_id: automation.pool_heater_controller
+                data:
+                  skip_condition: false
+    mode: single
+    
+  # This will control the pool heater based on how much power is being exported from solar
+  # note, the magic number "3000" is based on a rough calculation that the pool heater uses 2000-2300W
+  # to prevent constant flickering between off and on when other household items are used, a 700-800W buffer
+  # has been added (which adds breathing room for other things to turn on/off without constant switching)
+  - alias: Pool heater controller
+    id: pool_heater_controller
+    description: "Turns the pool heater on/off depending on if we are exporting power from our solar panels."
+    trigger:
+      - platform: numeric_state
+        entity_id:
+          - sensor.solar_panel_to_grid_w
+        above: 3000
+        for:
+          minutes: 5
+      - platform: numeric_state
+        entity_id:
+          - sensor.solar_panel_to_grid_w
+        below: 1
+        for:
+          minutes: 5
+    action:
+      - choose:
+          - conditions:
+            - condition: numeric_state
+              entity_id: sensor.solar_panel_to_grid_w
+              above: 3000
+            - condition: state
+              entity_id: switch.pool_heater_relay
+              state: "off"
+            sequence:
+              - service: switch.turn_on
+                target:
+                  entity_id: switch.pool_heater_relay
+                data: {}
+          - conditions:
+            - condition: numeric_state
+              entity_id: sensor.solar_panel_to_grid_w
+              below: 1
+            - condition: state
+              entity_id: switch.pool_heater_relay
+              state: "on"
+            sequence:
+              - service: switch.turn_off
+                target:
+                  entity_id: switch.pool_heater_relay
+                data: {}
+    mode: single
